@@ -11,6 +11,7 @@
                     Shows a Featured Book card with BookTitle,Author,Genere and it highlights one featured book from the collection.
                     Purpose:Provides users with a highlighted book recommendation when they first visit the site.
                     Gives an immediate sense of the website's content and encourages exploration of the full library.
+                    Whenever user refreshes the page shows the new BookTitle,Author,Genere.
                     
                 On the PageLoad all books in the data has displayed. Each Book displays their  name, author and genere and  Add to library button.
                 When clicked, it triggers the onAdd function, which adds the selected book to the user's reading list.
