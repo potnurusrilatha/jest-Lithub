@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Header from '@/components/Header';
 import Navigation from '@/components/Navigation';
 import FeaturedBook from '@/components/FeaturedBook';
 import BookList from '@/components/BookList';
@@ -31,9 +30,6 @@ export default function Home() {
 
   return (
     <div className="font-sans min-h-screen flex flex-col bg-black text-white">
-      <Header />
-      <Navigation />
-
       <main className="flex-grow max-w-6xl mx-auto p-4">
         {featuredBook && <FeaturedBook {...featuredBook} />}
         <BookList books={books} onAdd={handleAddToFavorites} />
