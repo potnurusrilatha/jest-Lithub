@@ -11,18 +11,16 @@ describe('FeaturedBook component', () => {
   test('renders the main heading and description', () => {
     render(<FeaturedBook {...book} />);
 
-    expect(screen.getByText(/Welcome to LitHub Picks/i)).toBeInTheDocument();
+    expect(screen.getByText(/Welcome to LitHub Website/i)).toBeInTheDocument();
     expect(
-      screen.getByText(/Discover the world of literature through our curated collection/i)
-    ).toBeInTheDocument();
+      screen.getByText(/Discover the world of literature through our curated collection/i)).toBeInTheDocument();
   });
 
   test('renders the featured book details correctly', () => {
     render(<FeaturedBook {...book} />);
 
     const featured = screen.getByRole('region', { name: /Featured Book/i });
-
-    // Check that the featured container contains the correct title, author, and genre
+    expect(featured).toBeInTheDocument();
     expect(featured).toHaveTextContent(book.title);
     expect(featured).toHaveTextContent(book.author);
     expect(featured).toHaveTextContent(book.genre);

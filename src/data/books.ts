@@ -38,21 +38,6 @@ export const books = [
     title: "Crime and Punishment",
     author: "Fyodor Dostoevsky",
     genre: "Psychological"
-  },
-  { 
-    title: "The Catcher in the Rye",
-    author: "J.D. Salinger",
-    genre: "Classic"
-  },
-  { 
-    title: "Brave New World",
-    author: "Aldous Huxley",
-    genre: "Dystopian"
-  },
-  { 
-    title: "The Lord of the Rings",
-    author: "J.R.R. Tolkien",
-    genre: "Fantasy"
   }
   
  
