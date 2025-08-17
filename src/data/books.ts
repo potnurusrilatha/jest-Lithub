@@ -53,50 +53,7 @@ export const books = [
     title: "The Lord of the Rings",
     author: "J.R.R. Tolkien",
     genre: "Fantasy"
-  },
-  { 
-    title: "Harry Potter and the Sorcerer's Stone",
-    author: "J.K. Rowling",
-    genre: "Fantasy"
-  },
-  { 
-    title: "The Chronicles of Narnia",
-    author: "C.S. Lewis",
-    genre: "Fantasy"
-  },
-  { 
-    title: "Jane Eyre",
-    author: "Charlotte Brontë",
-    genre: "Romance"
-  },
-  { 
-    title: "Wuthering Heights",
-    author: "Emily Brontë",
-    genre: "Romance"
-  },
-  { 
-    title: "Frankenstein",
-    author: "Mary Shelley",
-    genre: "Horror"
-  },
-  { 
-    title: "Dracula",
-    author: "Bram Stoker",
-    genre: "Horror"
-  },
-  { 
-    title: "The Picture of Dorian Gray",
-    author: "Oscar Wilde",
-    genre: "Classic"
-  },
-  { 
-    title: "Fahrenheit 451",
-    author: "Ray Bradbury",
-    genre: "Dystopian"
-  },
-  { 
-    title: "The Alchemist",
-    author: "Paulo Coelho",
-    genre: "Philosophical"
   }
+  
+ 
 ];
