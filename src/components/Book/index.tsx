@@ -1,9 +1,7 @@
 import React from "react";
 import { BookType } from "@/utils/types";
 
-interface BookProps extends BookType {
-  onAdd: (title: string) => void;
-}
+
 
 const Book = ({ title, author, genre, onAdd }:BookProps) => {
   return (
@@ -15,8 +13,7 @@ const Book = ({ title, author, genre, onAdd }:BookProps) => {
       </div>
       <button
         onClick={() => onAdd(title)}
-        className="mt-4 bg-yellow-500 text-black font-bold py-1 rounded hover:bg-yellow-400 transition-colors duration-300"
-      >
+        className="mt-4 bg-yellow-500 text-black font-bold py-1 rounded hover:bg-yellow-400 transition-colors duration-300">
         Add to Library
       </button>
     </div>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ReadingListProvider } from "@/components/ReadingListContext";
+import { ReadingListProvider } from "@/components/ReadingListProvider"
 import Header from "@/components/Header";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -33,12 +33,13 @@ export default function RootLayout({
       >
         <Header title="LitHub" />
         <Navigation />
+      
       <ReadingListProvider>
         {children}
       </ReadingListProvider>
-
+        <Footer />
       </body>
-       <Footer />
+       
     </html>
   );
 }

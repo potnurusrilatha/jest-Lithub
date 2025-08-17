@@ -40,10 +40,18 @@ describe('Footer Social Media', () => {
     render(<Footer />);
     
     const socialLinks = [
-      { name: 'Facebook', href: '#' },
-      { name: 'Twitter', href: '#' },
-      { name: 'Instagram', href: '#' },
-      { name: 'LinkedIn', href: '#' },
+      { name: 'Facebook',
+        href: '#'
+      },
+      { name: 'Twitter', 
+        href: '#' 
+      },
+      { name: 'Instagram', 
+        href: '#'
+      },
+      { name: 'LinkedIn',
+        href: '#'
+      },
     ];
 
     const socialIcons = screen.getAllByTestId('social-icons');
@@ -61,5 +69,12 @@ describe('Footer Copyright', () => {
     render(<Footer />);
     const currentYear = new Date().getFullYear();
     expect(screen.getByText(`© ${currentYear} LitHub. All rights reserved.`)).toBeInTheDocument();
+  });
+});
+describe('Footer About Section', () => {
+  it('renders About LitHub heading and description', () => {
+    render(<Footer />);
+    expect(screen.getByText('About LitHub')).toBeInTheDocument();
+    expect(screen.getByText(/LitHub is your daily source/i)).toBeInTheDocument();
   });
 });

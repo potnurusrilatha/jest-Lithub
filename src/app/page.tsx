@@ -1,13 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Navigation from '@/components/Navigation';
 import FeaturedBook from '@/components/FeaturedBook';
 import BookList from '@/components/BookList';
 import Result from '@/components/Result';
-import Footer from '@/components/Footer';
 import { books } from '@/data/books';
-import { useReadingList } from '@/components/ReadingListContext';
+import { useReadingList } from '@/components/ReadingListProvider';
 
 export default function Home() {
   const [featuredBook, setFeaturedBook] = useState(books[0]);
@@ -37,8 +35,6 @@ export default function Home() {
           <Result message={message} />
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }

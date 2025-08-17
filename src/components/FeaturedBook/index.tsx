@@ -17,4 +17,5 @@ const FeaturedBook= ({ title, author, genre }: BookType)  => {
   );
 };
 
+
 export default FeaturedBook;

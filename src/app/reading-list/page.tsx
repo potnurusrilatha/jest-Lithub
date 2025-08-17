@@ -1,7 +1,7 @@
 'use client';
 
-import Footer from '@/components/Footer';
-import { useReadingList } from '@/components/ReadingListContext';
+
+import { useReadingList } from "@/components/ReadingListProvider"
 
 export default function ReadingList() {
   const { favoriteBooks } = useReadingList();
@@ -17,7 +17,7 @@ export default function ReadingList() {
             ))}
           </ul>
         ) : (
-          <p className="text-gray-400">You haven’t added any books yet.</p>
+          <p className="text-gray-400">You haven't added any books yet.</p>
         )}
       </main>
     

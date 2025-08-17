@@ -4,16 +4,13 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          
-          <div>
+          <div className="mb-6">
             <h4 className="text-white font-semibold mb-3">About LitHub</h4>
             <p className="text-gray-400 text-sm">
               LitHub is your daily source for literary news, book recommendations, and thoughtful essays from around the literary world.
             </p>
           </div>
-
-         
-          <div>
+          <div className="mb-6">
             <h4 className="text-white font-semibold mb-3">Quick Links</h4>
             <ul className="text-gray-400 text-sm space-y-2">
               <li><a href="#" className="hover:text-white">Home</a></li>
@@ -23,7 +20,7 @@ const Footer = () => {
           </div>
 
          
-          <div>
+          <div className="mb-6">
             <h4 className="text-white font-semibold mb-3">Legal</h4>
             <ul className="text-gray-400 text-sm space-y-2">
               <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
@@ -33,7 +30,7 @@ const Footer = () => {
           </div>
 
          
-          <div>
+          <div className="mb-6">
             <h4 className="text-white font-semibold mb-3">Connect with Us</h4>
             <div className="flex space-x-4 ">
               <a data-testid="social-icons" href="#" className="hover:text-white">Facebook</a>
