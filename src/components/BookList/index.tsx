@@ -1,6 +1,6 @@
 import React from "react";
-import { BookType } from "@/utils/types";
 import Book from "@/components/Book";
+import { BookListProps } from "@/utils/types";
 
 const BookList = ({ books, onAdd }:BookListProps) => {
   return (
