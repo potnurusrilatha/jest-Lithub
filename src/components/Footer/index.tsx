@@ -17,8 +17,8 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-3">Quick Links</h4>
             <ul className="text-gray-400 text-sm space-y-2">
               <li><a href="#" className="hover:text-white">Home</a></li>
-              <li><a href="#" className="hover:text-white">Books</a></li>
-              <li><a href="#" className="hover:text-white">Membership</a></li>
+              <li><a href="#" className="hover:text-white">Reading-list</a></li>
+              
             </ul>
           </div>
 
@@ -36,10 +36,10 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-3">Connect with Us</h4>
             <div className="flex space-x-4 ">
-              <a href="#" className="hover:text-white">Facebook</a>
-              <a href="#" className="hover:text-white">Twitter</a>
-              <a href="#" className="hover:text-white">Instagram</a>
-              <a href="#" className="hover:text-white">LinkedIn</a>
+              <a data-testid="social-icons" href="#" className="hover:text-white">Facebook</a>
+              <a data-testid="social-icons" href="#" className="hover:text-white">Twitter</a>
+              <a data-testid="social-icons" href="#" className="hover:text-white">Instagram</a>
+              <a data-testid="social-icons" href="#" className="hover:text-white">LinkedIn</a>
             </div>
           </div>
         </div>
