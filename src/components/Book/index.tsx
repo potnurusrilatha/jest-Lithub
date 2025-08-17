@@ -1,6 +1,6 @@
 import React from "react";
 import { BookType } from "@/utils/types";
-
+import { BookProps } from "@/utils/types";
 
 
 const Book = ({ title, author, genre, onAdd }:BookProps) => {
